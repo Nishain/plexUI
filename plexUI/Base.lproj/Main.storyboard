@@ -23,20 +23,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jN4-x9-plO">
                                 <rect key="frame" x="133" y="171" width="148" height="51"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-WU-s53">
-                                <rect key="frame" x="86.666666666666686" y="448" width="255" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-WU-s53">
+                                <rect key="frame" x="86.666666666666686" y="380.66666666666669" width="255" height="175.00000000000006"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZY-Ly-3dp">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-b4-fPM">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666874" width="184.33333333333331" height="28.666666666666671"/>
+                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6TL-b6-Usv">
-                                                <rect key="frame" x="24.666666666666654" y="10.33333333333333" width="15.333333333333332" height="18.666666666666654"/>
+                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                             </imageView>
                                         </subviews>
@@ -49,15 +49,94 @@
                                             <constraint firstAttribute="height" constant="40" id="vsm-d0-rm5"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-Ra-1tt">
+                                        <rect key="frame" x="0.0" y="45" width="255" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGc-gA-nbK">
+                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-RL-kxs">
+                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="mYf-RL-kxs" firstAttribute="centerY" secondItem="Byb-Ra-1tt" secondAttribute="centerY" id="E3H-Pe-R9e"/>
+                                            <constraint firstAttribute="height" constant="40" id="Jv9-2z-Bcc"/>
+                                            <constraint firstItem="JGc-gA-nbK" firstAttribute="centerY" secondItem="Byb-Ra-1tt" secondAttribute="centerY" id="OW4-Ow-E7O"/>
+                                            <constraint firstAttribute="trailing" secondItem="JGc-gA-nbK" secondAttribute="trailing" constant="20.666666666666629" id="ZHR-Mj-cMc"/>
+                                            <constraint firstItem="JGc-gA-nbK" firstAttribute="leading" secondItem="mYf-RL-kxs" secondAttribute="trailing" constant="10" id="vJd-hU-9Wi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-Px-C8p">
+                                        <rect key="frame" x="0.0" y="90" width="255" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-En-LgQ">
+                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="maJ-QT-O8O">
+                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="maJ-QT-O8O" firstAttribute="centerY" secondItem="Xcc-Px-C8p" secondAttribute="centerY" id="3I1-iU-GLU"/>
+                                            <constraint firstItem="eCe-En-LgQ" firstAttribute="leading" secondItem="maJ-QT-O8O" secondAttribute="trailing" constant="10" id="JQ2-7T-xnj"/>
+                                            <constraint firstAttribute="height" constant="40" id="Jpu-a6-xQj"/>
+                                            <constraint firstAttribute="trailing" secondItem="eCe-En-LgQ" secondAttribute="trailing" constant="20.666666666666629" id="Pp2-WZ-w1W"/>
+                                            <constraint firstItem="eCe-En-LgQ" firstAttribute="centerY" secondItem="Xcc-Px-C8p" secondAttribute="centerY" id="lhE-a0-jGa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbQ-eh-fG2">
+                                        <rect key="frame" x="0.0" y="134.99999999999994" width="255" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taS-qa-6sO">
+                                                <rect key="frame" x="49.999999999999986" y="5.6666666666667442" width="184.33333333333331" height="28.666666666666671"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oas-eF-Nwy">
+                                                <rect key="frame" x="24.666666666666654" y="10.000000000000073" width="15.333333333333332" height="18.666666666666654"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="taS-qa-6sO" firstAttribute="centerY" secondItem="gbQ-eh-fG2" secondAttribute="centerY" id="Prp-mi-SCv"/>
+                                            <constraint firstItem="taS-qa-6sO" firstAttribute="leading" secondItem="oas-eF-Nwy" secondAttribute="trailing" constant="10" id="RFd-iz-Kjx"/>
+                                            <constraint firstAttribute="height" constant="40" id="VSp-8c-Qsa"/>
+                                            <constraint firstItem="oas-eF-Nwy" firstAttribute="centerY" secondItem="gbQ-eh-fG2" secondAttribute="centerY" id="j5K-Dg-y8g"/>
+                                            <constraint firstAttribute="trailing" secondItem="taS-qa-6sO" secondAttribute="trailing" constant="20.666666666666629" id="tqD-FK-wym"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="9NY-AT-0CF"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jga-tF-5pQ">
+                                <rect key="frame" x="20" y="620" width="388" height="81.333333333333371"/>
+                                <string key="text">By creating an account or continuing to use a Plex application, website, or software, you acknowledge and agree that you have accepted the Terms of Service and have reviewed the Privacy Policy</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jga-tF-5pQ" firstAttribute="top" secondItem="DcF-WU-s53" secondAttribute="bottom" constant="64.333333333333258" id="83a-hw-eef"/>
+                            <constraint firstItem="jga-tF-5pQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="86J-nz-ylY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="jga-tF-5pQ" secondAttribute="leading" constant="-20" id="BA2-Da-OpH"/>
                             <constraint firstItem="DcF-WU-s53" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H21-vR-jXj"/>
                             <constraint firstItem="DcF-WU-s53" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HrR-0z-Ijf"/>
                             <constraint firstItem="jN4-x9-plO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="dw8-xU-lCR"/>
