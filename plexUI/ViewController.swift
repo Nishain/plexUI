@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var policyTerms: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let attributedString = NSMutableAttributedString(string: policyTerms.text!)
+        let range1 =  (policyTerms.text! as NSString).range(of: "Terms of Service")
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor,value:UIColor.red, range: range1)
+        policyTerms.attributedText = attributedString
     }
-
+    
+    
 
 }
 
