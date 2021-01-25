@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,113 +13,46 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="plexUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-TB-WdY">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jN4-x9-plO">
-                                <rect key="frame" x="133" y="171" width="148" height="51"/>
+                                <rect key="frame" x="126" y="171" width="148" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="Ahz-cZ-VG3"/>
                                     <constraint firstAttribute="width" constant="148" id="VBn-v6-Kqh"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-WU-s53">
-                                <rect key="frame" x="86.666666666666686" y="380.66666666666669" width="255" height="175.00000000000006"/>
+                                <rect key="frame" x="79.666666666666686" y="433" width="255" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZY-Ly-3dp">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-b4-fPM">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
+                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666874" width="184.33333333333331" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6TL-b6-Usv">
-                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <rect key="frame" x="24.666666666666654" y="10.33333333333333" width="15.333333333333332" height="18.666666666666654"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="qOj-b4-fPM" secondAttribute="trailing" constant="20.666666666666629" id="4Pb-Xf-htb"/>
                                             <constraint firstItem="qOj-b4-fPM" firstAttribute="centerY" secondItem="1ZY-Ly-3dp" secondAttribute="centerY" id="4qs-Ws-Qm1"/>
                                             <constraint firstItem="6TL-b6-Usv" firstAttribute="centerY" secondItem="1ZY-Ly-3dp" secondAttribute="centerY" id="B1N-4s-sah"/>
+                                            <constraint firstAttribute="width" constant="255" id="ChO-3X-rq3"/>
                                             <constraint firstItem="qOj-b4-fPM" firstAttribute="leading" secondItem="6TL-b6-Usv" secondAttribute="trailing" constant="10" id="E9I-FK-qTC"/>
                                             <constraint firstAttribute="height" constant="40" id="vsm-d0-rm5"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-Ra-1tt">
-                                        <rect key="frame" x="0.0" y="45" width="255" height="40"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGc-gA-nbK">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-RL-kxs">
-                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="mYf-RL-kxs" firstAttribute="centerY" secondItem="Byb-Ra-1tt" secondAttribute="centerY" id="E3H-Pe-R9e"/>
-                                            <constraint firstAttribute="height" constant="40" id="Jv9-2z-Bcc"/>
-                                            <constraint firstItem="JGc-gA-nbK" firstAttribute="centerY" secondItem="Byb-Ra-1tt" secondAttribute="centerY" id="OW4-Ow-E7O"/>
-                                            <constraint firstAttribute="trailing" secondItem="JGc-gA-nbK" secondAttribute="trailing" constant="20.666666666666629" id="ZHR-Mj-cMc"/>
-                                            <constraint firstItem="JGc-gA-nbK" firstAttribute="leading" secondItem="mYf-RL-kxs" secondAttribute="trailing" constant="10" id="vJd-hU-9Wi"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-Px-C8p">
-                                        <rect key="frame" x="0.0" y="90" width="255" height="40"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-En-LgQ">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666305" width="184.33333333333331" height="28.666666666666671"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="maJ-QT-O8O">
-                                                <rect key="frame" x="24.666666666666654" y="9.9999999999999591" width="15.333333333333332" height="18.666666666666654"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="maJ-QT-O8O" firstAttribute="centerY" secondItem="Xcc-Px-C8p" secondAttribute="centerY" id="3I1-iU-GLU"/>
-                                            <constraint firstItem="eCe-En-LgQ" firstAttribute="leading" secondItem="maJ-QT-O8O" secondAttribute="trailing" constant="10" id="JQ2-7T-xnj"/>
-                                            <constraint firstAttribute="height" constant="40" id="Jpu-a6-xQj"/>
-                                            <constraint firstAttribute="trailing" secondItem="eCe-En-LgQ" secondAttribute="trailing" constant="20.666666666666629" id="Pp2-WZ-w1W"/>
-                                            <constraint firstItem="eCe-En-LgQ" firstAttribute="centerY" secondItem="Xcc-Px-C8p" secondAttribute="centerY" id="lhE-a0-jGa"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbQ-eh-fG2">
-                                        <rect key="frame" x="0.0" y="134.99999999999994" width="255" height="40"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taS-qa-6sO">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666667442" width="184.33333333333331" height="28.666666666666671"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oas-eF-Nwy">
-                                                <rect key="frame" x="24.666666666666654" y="10.000000000000073" width="15.333333333333332" height="18.666666666666654"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="taS-qa-6sO" firstAttribute="centerY" secondItem="gbQ-eh-fG2" secondAttribute="centerY" id="Prp-mi-SCv"/>
-                                            <constraint firstItem="taS-qa-6sO" firstAttribute="leading" secondItem="oas-eF-Nwy" secondAttribute="trailing" constant="10" id="RFd-iz-Kjx"/>
-                                            <constraint firstAttribute="height" constant="40" id="VSp-8c-Qsa"/>
-                                            <constraint firstItem="oas-eF-Nwy" firstAttribute="centerY" secondItem="gbQ-eh-fG2" secondAttribute="centerY" id="j5K-Dg-y8g"/>
-                                            <constraint firstAttribute="trailing" secondItem="taS-qa-6sO" secondAttribute="trailing" constant="20.666666666666629" id="tqD-FK-wym"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -128,14 +61,17 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jga-tF-5pQ">
-                                <rect key="frame" x="20" y="620" width="388" height="81.333333333333371"/>
+                                <rect key="frame" x="20" y="537.33333333333337" width="374" height="101.66666666666663"/>
                                 <string key="text">By creating an account or continuing to use a Plex application, website, or software, you acknowledge and agree that you have accepted the Terms of Service and have reviewed the Privacy Policy</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-J7-nEk">
-                                <rect key="frame" x="161.45413363533385" y="766" width="105.00000000000006" height="29.999999999999886"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-J7-nEk">
+                                <rect key="frame" x="154.66666666666666" y="679" width="104.99999999999997" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="U5K-r8-xV3"/>
+                                </constraints>
                                 <state key="normal" title="Why Sign in?">
                                     <color key="titleColor" systemColor="opaqueSeparatorColor"/>
                                 </state>
@@ -144,7 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="k9Y-J7-nEk" firstAttribute="top" secondItem="jga-tF-5pQ" secondAttribute="bottom" constant="64.666666666666629" id="47G-3c-bP2"/>
+                            <constraint firstItem="k9Y-J7-nEk" firstAttribute="top" secondItem="jga-tF-5pQ" secondAttribute="bottom" constant="40" id="47G-3c-bP2"/>
                             <constraint firstItem="jga-tF-5pQ" firstAttribute="top" secondItem="DcF-WU-s53" secondAttribute="bottom" constant="64.333333333333258" id="83a-hw-eef"/>
                             <constraint firstItem="jga-tF-5pQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="86J-nz-ylY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="jga-tF-5pQ" secondAttribute="leading" constant="-20" id="BA2-Da-OpH"/>
@@ -157,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="policyTerms" destination="jga-tF-5pQ" id="Ltf-ch-9kW"/>
+                        <outlet property="stackView" destination="DcF-WU-s53" id="GWh-j3-18M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,9 +105,6 @@
         <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="background" width="240" height="426.66665649414062"/>
         <image name="logo" width="964.33331298828125" height="312.66665649414062"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
