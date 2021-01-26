@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var policyTerms: UILabel!
+    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,12 @@ class ViewController: UIViewController {
             
         }
     }
-    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if(UIDevice.current.orientation.isLandscape){
+            var centerVertically = NSLayoutConstraint()
+        }
+        
+    }
     
 
 }
