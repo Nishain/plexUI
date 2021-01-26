@@ -27,48 +27,187 @@
                                     <constraint firstAttribute="width" constant="148" id="VBn-v6-Kqh"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-WU-s53">
-                                <rect key="frame" x="79.666666666666686" y="433" width="255" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-WU-s53">
+                                <rect key="frame" x="32" y="338" width="350" height="230"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZY-Ly-3dp">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-b4-fPM">
-                                                <rect key="frame" x="49.999999999999986" y="5.6666666666666874" width="184.33333333333331" height="28.666666666666671"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue in with Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOj-b4-fPM">
+                                                <rect key="frame" x="59" y="10.666666666666687" width="232" height="28.666666666666671"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelogo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6TL-b6-Usv">
-                                                <rect key="frame" x="24.666666666666654" y="10.33333333333333" width="15.333333333333332" height="18.666666666666654"/>
+                                                <rect key="frame" x="33.666666666666671" y="15.33333333333333" width="15.333333333333336" height="18.666666666666654"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="qOj-b4-fPM" secondAttribute="trailing" constant="20.666666666666629" id="4Pb-Xf-htb"/>
                                             <constraint firstItem="qOj-b4-fPM" firstAttribute="centerY" secondItem="1ZY-Ly-3dp" secondAttribute="centerY" id="4qs-Ws-Qm1"/>
                                             <constraint firstItem="6TL-b6-Usv" firstAttribute="centerY" secondItem="1ZY-Ly-3dp" secondAttribute="centerY" id="B1N-4s-sah"/>
-                                            <constraint firstAttribute="width" constant="255" id="ChO-3X-rq3"/>
+                                            <constraint firstItem="qOj-b4-fPM" firstAttribute="centerX" secondItem="1ZY-Ly-3dp" secondAttribute="centerX" id="DB7-ha-zeo"/>
                                             <constraint firstItem="qOj-b4-fPM" firstAttribute="leading" secondItem="6TL-b6-Usv" secondAttribute="trailing" constant="10" id="E9I-FK-qTC"/>
-                                            <constraint firstAttribute="height" constant="40" id="vsm-d0-rm5"/>
+                                            <constraint firstAttribute="height" constant="50" id="gvf-sl-yQi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6be-p8-pd2">
+                                        <rect key="frame" x="0.0" y="60" width="350" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-fb-bJb">
+                                                <rect key="frame" x="53.000000000000014" y="10.666666666666687" width="244.33333333333337" height="28.666666666666671"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Continue with facebook">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="24"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="0QY-s0-TCA">
+                                                <rect key="frame" x="27.666666666666661" y="14.999999999999998" width="15.333333333333332" height="20.333333333333329"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15.33" id="J71-Gj-Je9"/>
+                                                    <constraint firstAttribute="height" constant="20.329999999999998" id="wO9-p4-qJk"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.2266760468" green="0.34799242019999999" blue="0.60016602279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="qE7-fb-bJb" firstAttribute="centerX" secondItem="6be-p8-pd2" secondAttribute="centerX" id="8sg-IT-nfl"/>
+                                            <constraint firstAttribute="height" constant="50" id="DLm-z5-Ih0"/>
+                                            <constraint firstItem="qE7-fb-bJb" firstAttribute="centerY" secondItem="6be-p8-pd2" secondAttribute="centerY" id="DpU-6z-Rhc"/>
+                                            <constraint firstItem="0QY-s0-TCA" firstAttribute="centerY" secondItem="6be-p8-pd2" secondAttribute="centerY" id="hi5-DF-rnu"/>
+                                            <constraint firstItem="qE7-fb-bJb" firstAttribute="leading" secondItem="0QY-s0-TCA" secondAttribute="trailing" constant="10" id="iMH-tK-ecW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arI-mH-5f6">
+                                        <rect key="frame" x="0.0" y="120" width="350" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh8-Rv-Xta">
+                                                <rect key="frame" x="63.666666666666686" y="10.666666666666687" width="223" height="28.666666666666671"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Continue with Google">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="24"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="1OX-0Q-LsO">
+                                                <rect key="frame" x="38.333333333333329" y="14" width="15.333333333333336" height="22"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="J8v-a5-AwX"/>
+                                                    <constraint firstAttribute="width" constant="15.33" id="n9j-LD-ASQ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kh8-Rv-Xta" firstAttribute="leading" secondItem="1OX-0Q-LsO" secondAttribute="trailing" constant="10" id="2tr-Oh-poB"/>
+                                            <constraint firstItem="kh8-Rv-Xta" firstAttribute="centerX" secondItem="arI-mH-5f6" secondAttribute="centerX" id="8By-ZT-EOQ"/>
+                                            <constraint firstItem="1OX-0Q-LsO" firstAttribute="centerY" secondItem="arI-mH-5f6" secondAttribute="centerY" id="Bi5-ch-6XC"/>
+                                            <constraint firstItem="kh8-Rv-Xta" firstAttribute="centerY" secondItem="arI-mH-5f6" secondAttribute="centerY" id="PZI-8g-Yj4"/>
+                                            <constraint firstAttribute="height" constant="50" id="TH3-16-l2w"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utv-LA-FF0">
+                                        <rect key="frame" x="0.0" y="180" width="350" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-Og-OaT">
+                                                <rect key="frame" x="73" y="10.666666666666631" width="204" height="28.666666666666671"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Continue with Email">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="24"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.stack" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-hr-cHc">
+                                                <rect key="frame" x="41" y="14.666666666666668" width="22" height="21.000000000000004"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.70533746480000004" green="0.4286110997" blue="0.085307992989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="nAf-Og-OaT" firstAttribute="leading" secondItem="hsa-hr-cHc" secondAttribute="trailing" constant="10" id="cQ3-mc-r1f"/>
+                                            <constraint firstAttribute="height" constant="50" id="dZb-Iy-cKs"/>
+                                            <constraint firstItem="nAf-Og-OaT" firstAttribute="centerX" secondItem="utv-LA-FF0" secondAttribute="centerX" id="drp-Id-T3C"/>
+                                            <constraint firstItem="nAf-Og-OaT" firstAttribute="centerY" secondItem="utv-LA-FF0" secondAttribute="centerY" id="uYN-l7-fUY"/>
+                                            <constraint firstItem="hsa-hr-cHc" firstAttribute="centerY" secondItem="utv-LA-FF0" secondAttribute="centerY" id="ubD-bE-9dH"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="255" id="9NY-AT-0CF"/>
+                                    <constraint firstAttribute="width" constant="350" id="9NY-AT-0CF"/>
+                                    <constraint firstItem="arI-mH-5f6" firstAttribute="width" secondItem="DcF-WU-s53" secondAttribute="width" id="Avo-oL-i11"/>
+                                    <constraint firstItem="1ZY-Ly-3dp" firstAttribute="width" secondItem="DcF-WU-s53" secondAttribute="width" id="Y88-ZQ-AIE"/>
+                                    <constraint firstItem="6be-p8-pd2" firstAttribute="width" secondItem="DcF-WU-s53" secondAttribute="width" id="a9Z-im-hU7"/>
+                                    <constraint firstItem="utv-LA-FF0" firstAttribute="width" secondItem="DcF-WU-s53" secondAttribute="width" id="ivJ-fK-3CN"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jga-tF-5pQ">
-                                <rect key="frame" x="20" y="537.33333333333337" width="374" height="101.66666666666663"/>
-                                <string key="text">By creating an account or continuing to use a Plex application, website, or software, you acknowledge and agree that you have accepted the Terms of Service and have reviewed the Privacy Policy</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jga-tF-5pQ">
+                                <rect key="frame" x="20" y="632.33333333333337" width="374" height="101.66666666666663"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">By creating an account or continuing to use a Plex application, website, or software, you acknowledge and agree that you have accepted the </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Service">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94614273309999997" green="0.73928177360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and have reviewed the">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.78791303752236286" blue="0.064516129032258118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-J7-nEk">
-                                <rect key="frame" x="154.66666666666666" y="679" width="104.99999999999997" height="30"/>
+                                <rect key="frame" x="154.66666666666666" y="774" width="104.99999999999997" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="U5K-r8-xV3"/>
                                 </constraints>
@@ -98,13 +237,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.18691588785046" y="123.75809935205184"/>
+            <point key="canvasLocation" x="139.13043478260872" y="123.21428571428571"/>
         </scene>
     </scenes>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="background" width="240" height="426.66665649414062"/>
+        <image name="facebook" width="80" height="80"/>
+        <image name="google" width="170.66667175292969" height="170.66667175292969"/>
         <image name="logo" width="964.33331298828125" height="312.66665649414062"/>
+        <image name="mail.stack" catalog="system" width="128" height="122"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
