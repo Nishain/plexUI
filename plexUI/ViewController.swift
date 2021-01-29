@@ -17,10 +17,15 @@ class ViewController: UIViewController {
             uiView.layer.cornerRadius = 6
             
         }
+        
     }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if(UIDevice.current.orientation.isLandscape){
-            var centerVertically = NSLayoutConstraint()
+        let orientation = UIDevice.current.orientation
+        if(orientation.isLandscape){
+            self.logo.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi/2))
+        }else if(orientation.isPortrait){
+            self.logo.transform = CGAffineTransform(rotationAngle: CGFloat(0))
         }
         
     }
